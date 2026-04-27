@@ -1,225 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raashid Shaikh</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raashid Shaikh</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
 
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Raashid Shaikh</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+<body>
 
-    <nav id="hamburger-nav">
-      <div class="logo">Raashid Shaikh</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span><span></span><span></span>
+<!-- DESKTOP NAV -->
+<nav id="desktop-nav">
+  <div class="logo">Raashid Shaikh</div>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HAMBURGER NAV -->
+<nav id="hamburger-nav">
+  <div class="logo">Raashid Shaikh</div>
+
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+</nav>
+
+<!-- PROFILE -->
+<section id="profile">
+  <div class="section__pic-container">
+    <img src="./assets/IMG_4671.png" />
+  </div>
+
+  <div class="section__text">
+    <p>Hello, I am</p>
+    <h1 class="title">Raashid Shaikh</h1>
+
+    <p class="section__text__p2">
+      Technical Support | Shopify | SaaS | Troubleshooting
+    </p>
+
+    <div class="btn-container">
+      <button class="btn btn-color-2"
+        onclick="window.open('https://docs.google.com/document/d/1KsinoVTRJkEfnK2DH7uMb1LJ8fp9S-bj/edit')">
+        View CV
+      </button>
+
+      <button class="btn btn-color-1" onclick="location.href='#contact'">
+        Contact
+      </button>
+    </div>
+
+    <div id="socials-container">
+      <img src="./assets/linkedin.png" class="icon"
+        onclick="location.href='https://linkedin.com'" />
+
+      <img src="./assets/github.png" class="icon"
+        onclick="location.href='https://github.com'" />
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h1 class="title">About Me</h1>
+
+  <div class="section-container">
+
+    <div class="section__pic-container">
+      <img src="./assets/IMG_3963.png" class="about-pic"/>
+    </div>
+
+    <div class="about-details-container">
+
+      <div class="about-containers">
+
+        <div class="details-container">
+          <img src="./assets/experience.png" class="icon"/>
+          <h3>Experience</h3>
+          <p>3+ Years<br/>Tech Support & QA</p>
         </div>
 
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="details-container">
+          <img src="./assets/education.png" class="icon"/>
+          <h3>Education</h3>
+          <p>BSc Computer Science<br/>AEC Software Testing</p>
         </div>
-      </div>
-    </nav>
 
-    <!-- PROFILE -->
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/IMG_4671.png" alt="profile" />
       </div>
 
-      <div class="section__text">
-        <p class="section__text__p1">Hello World! I'am</p>
-        <h1 class="title">Raashid Shaikh</h1>
-
-        <p class="section__text__p2">
-          Technical Support Specialist | Shopify & SaaS Support | Troubleshooting
+      <div class="text-container">
+        <p>
+          Technical Support Specialist with SaaS and e-commerce experience...
         </p>
-
-        <div class="btn-container">
-          <button class="btn btn-color-2"
-            onclick="window.open('https://docs.google.com/document/d/13XccYeG_Il9F5k7LwxLmqjUcBM0Fw2OA/edit')">
-            Access CV
-          </button>
-
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" class="icon"
-            onclick="location.href='https://www.linkedin.com/in/raashid-shaikh/'" />
-
-          <img src="./assets/github.png" class="icon"
-            onclick="location.href='https://github.com/Raashid-Shaikh'" />
-        </div>
       </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+    </div>
+  </div>
 
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/IMG_3963.png" class="about-pic" />
-        </div>
+  <img src="./assets/arrow.png" class="icon arrow"
+    onclick="location.href='#experience'"/>
+</section>
 
-        <div class="about-details-container">
-          <div class="about-containers">
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h1 class="title">Experience</h1>
 
-            <div class="details-container">
-              <img src="./assets/experience.png" class="icon" />
-              <h3>Experience</h3>
-              <p>3+ Years<br />Technical Support & QA</p>
+  <div class="experience-details-container">
+
+    <div class="about-containers">
+
+      <div class="details-container">
+        <h2>Technical Support</h2>
+
+        <div class="article-container">
+
+          <article>
+            <img src="./assets/checkmark.png" class="icon"/>
+            <div>
+              <h3>Shopify Support</h3>
+              <p>Customer Issue Resolution</p>
             </div>
+          </article>
 
-            <div class="details-container">
-              <img src="./assets/education.png" class="icon" />
-              <h3>Education</h3>
-              <p>Bachelor in Computer Science<br />AEC Software Testing</p>
+          <article>
+            <img src="./assets/checkmark.png" class="icon"/>
+            <div>
+              <h3>Ticket Handling</h3>
+              <p>High volume queues</p>
             </div>
+          </article>
 
-          </div>
-
-          <div class="text-container">
-            <p>
-              I am a Technical Support Specialist with experience in SaaS and e-commerce environments...
-            </p>
-          </div>
         </div>
       </div>
 
-      <img src="./assets/arrow.png" class="icon arrow"
-        onclick="location.href='./#experience'" />
-    </section>
+      <div class="details-container">
+        <h2>Technical Skills</h2>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+        <div class="article-container">
 
-      <div class="experience-details-container">
-        <div class="about-containers">
-
-          <div class="details-container">
-            <h2 class="experience-sub-title">Technical Support</h2>
-
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>Shopify / SaaS</h3>
-                  <p>Customer Support</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>Ticket Handling</h3>
-                  <p>High-volume queues</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>Troubleshooting</h3>
-                  <p>Root cause analysis</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>Communication</h3>
-                  <p>Customer facing support</p>
-                </div>
-              </article>
+          <article>
+            <img src="./assets/checkmark.png" class="icon"/>
+            <div>
+              <h3>Selenium</h3>
+              <p>Automation Testing</p>
             </div>
-          </div>
+          </article>
 
-          <div class="details-container">
-            <h2 class="experience-sub-title">Technical Background</h2>
-
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>QA Testing</h3>
-                  <p>Selenium</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>Java</h3>
-                  <p>Basics</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>Git</h3>
-                  <p>Version Control</p>
-                </div>
-              </article>
+          <article>
+            <img src="./assets/checkmark.png" class="icon"/>
+            <div>
+              <h3>Java</h3>
+              <p>Basics</p>
             </div>
-          </div>
+          </article>
 
         </div>
       </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <h1 class="title">Contact Me</h1>
+    </div>
+  </div>
+</section>
 
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/email.png" class="icon contact-icon" />
-          <p><a href="mailto:arshaikh1917@gmail.com">Email</a></p>
-        </div>
+<!-- CONTACT -->
+<section id="contact">
+  <h1 class="title">Contact</h1>
 
-        <div class="contact-info-container">
-          <img src="./assets/linkedin.png" class="icon contact-icon" />
-          <p><a href="https://linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="./assets/email.png" class="icon"/>
+      <p>Email</p>
+    </div>
 
-    <footer>
-      <p>Copyright © 2023 Raashid Shaikh</p>
-    </footer>
+    <div class="contact-info-container">
+      <img src="./assets/linkedin.png" class="icon"/>
+      <p>LinkedIn</p>
+    </div>
+  </div>
+</section>
 
-    <script src="app.js"></script>
-  </body>
+<footer>
+  <p>Copyright © 2026</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
 </html>
