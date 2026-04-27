@@ -2,17 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Raashid Shaikh</title>
-
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav id="desktop-nav">
+<nav>
   <div class="logo">Raashid Shaikh</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
@@ -24,180 +21,90 @@
 
 <!-- PROFILE -->
 <section id="profile">
-  <div class="section__pic-container">
-    <img src="./assets/IMG_4671.png" alt="profile" />
+  <div class="profile-container">
+    <img src="./assets/IMG_4671.png" />
   </div>
 
-  <div class="section__text">
-    <p class="section__text__p1">Hello, I'm</p>
-    <h1 class="title">Raashid Shaikh</h1>
+  <div class="profile-text">
+    <h1>Raashid Shaikh</h1>
+    <p>Technical Support | SaaS | Troubleshooting</p>
 
-    <p class="section__text__p2">
-      Technical Support Specialist | SaaS & Shopify Support | Troubleshooting & QA Background
-    </p>
-
-    <div class="btn-container">
-      <button class="btn btn-color-2"
-        onclick="window.open('https://docs.google.com/document/d/1KsinoVTRJkEfnK2DH7uMb1LJ8fp9S-bj/export?format=pdf','_blank')">
-        View Resume
-      </button>
-
-      <button class="btn btn-color-1" onclick="location.href='#contact'">
-        Contact Info
-      </button>
-    </div>
+    <button onclick="window.open('https://docs.google.com/document/d/1KsinoVTRJkEfnK2DH7uMb1LJ8fp9S-bj/export?format=pdf','_blank')">
+      View Resume
+    </button>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-  <p class="section__text__p1">Get To Know More</p>
-  <h1 class="title">About Me</h1>
+  <h2>About Me</h2>
 
-  <div class="about-containers">
-
-    <div class="details-container">
+  <div class="card-row">
+    <div class="card">
       <h3>Experience</h3>
-      <p>3+ Years<br />Technical Support & SaaS</p>
+      <p>3+ Years Technical Support</p>
     </div>
 
-    <div class="details-container">
+    <div class="card">
       <h3>Education</h3>
-      <p>BSc Computer Science<br />AEC Software Testing</p>
+      <p>Computer Science</p>
     </div>
-
   </div>
 
-  <div class="text-container">
-    <p>
-      Technical Support Specialist experienced in SaaS and e-commerce environments,
-      focused on troubleshooting, ticket handling, and customer experience improvement.
-    </p>
-  </div>
+  <p class="about-text">
+    Technical Support Specialist focused on SaaS, troubleshooting and customer experience.
+  </p>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Experience</h1>
+  <h2>Experience</h2>
 
-  <div class="experience-details-container">
+  <div class="card">
 
-    <div class="about-containers">
+    <h3>Technical Support</h3>
 
-      <div class="details-container">
-        <h2 class="experience-sub-title">Technical Support</h2>
+    <ul class="list">
+      <li>Shopify / SaaS Support – Issue Resolution</li>
+      <li>Ticket Handling – High volume environments</li>
+      <li>Troubleshooting – Root cause analysis</li>
+      <li>Customer Communication – Technical support</li>
+    </ul>
 
-        <div class="article-container">
-
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>Shopify / SaaS Support</h3>
-              <p>Customer Issue Resolution</p>
-            </div>
-          </article>
-
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>Ticket Handling</h3>
-              <p>High-volume environments</p>
-            </div>
-          </article>
-
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>Troubleshooting</h3>
-              <p>Root cause analysis</p>
-            </div>
-          </article>
-
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>Customer Communication</h3>
-              <p>Technical explanations</p>
-            </div>
-          </article>
-
-        </div>
-      </div>
-
-    </div>
   </div>
 </section>
 
 <!-- CERTIFICATIONS -->
 <section id="certifications">
-  <p class="section__text__p1">Verified Learning</p>
-  <h1 class="title">Certifications</h1>
+  <h2>Certifications</h2>
 
-  <div class="experience-details-container">
-    <div class="about-containers">
+  <div class="card-row">
 
-      <div class="details-container">
-        <h2 class="experience-sub-title">Certifications</h2>
-
-        <div class="article-container">
-
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>ISTQB Foundation</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>Selenium 101</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>Troubleshooting & Debugging Techniques</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>Java SE 8 (IZO-811)</h3>
-            </div>
-          </article>
-
-        </div>
-      </div>
-
+    <div class="card">
+      <h3>ISTQB Foundation</h3>
     </div>
+
+    <div class="card">
+      <h3>Selenium 101</h3>
+    </div>
+
+    <div class="card">
+      <h3>Troubleshooting & Debugging</h3>
+    </div>
+
+    <div class="card">
+      <h3>Java SE 8 (IZO-811)</h3>
+    </div>
+
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <p class="section__text__p1">Get in Touch</p>
-  <h1 class="title">Contact Me</h1>
-
-  <div class="contact-info-upper-container">
-
-    <div class="contact-info-container">
-      <p><a href="mailto:arshaikh1917@gmail.com">Email</a></p>
-    </div>
-
-    <div class="contact-info-container">
-      <p><a href="https://linkedin.com">LinkedIn</a></p>
-    </div>
-
-  </div>
+  <h2>Contact</h2>
+  <p>Email: arshaikh1917@gmail.com</p>
+  <p>LinkedIn</p>
 </section>
-
-<footer>
-  <p>© 2026 Raashid Shaikh</p>
-</footer>
 
 </body>
 </html>
