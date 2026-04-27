@@ -417,3 +417,20 @@ footer p {
 .cert-grid .details-container p {
   margin-top: 0.5rem;
 }
+
+.cert-grid .details-container {
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.cert-grid h2,
+.cert-grid p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.cert-grid .details-container {
+  width: 100%;
+  min-width: 0;
+}
+
