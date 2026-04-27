@@ -1,115 +1,201 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raashid Shaikh</title>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
 
-body {
-  font-family: "Poppins", sans-serif;
-}
+<body>
 
-html {
-  scroll-behavior: smooth;
-}
+<!-- DESKTOP NAV -->
+<nav id="desktop-nav">
+  <div class="logo">Raashid Shaikh</div>
 
-p {
-  color: rgb(85, 85, 85);
-}
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-/* NAV */
-nav,
-.nav-links {
-  display: flex;
-}
+<!-- HAMBURGER NAV -->
+<nav id="hamburger-nav">
+  <div class="logo">Raashid Shaikh</div>
 
-nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
-}
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
 
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-}
+    <div class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+</nav>
 
-/* ICON FIX (IMPORTANT) */
-.icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-}
+<!-- PROFILE -->
+<section id="profile">
+  <div class="section__pic-container">
+    <img src="./assets/IMG_4671.png" />
+  </div>
 
-/* SECTIONS */
-section {
-  padding-top: 4vh;
-  margin: 0 10rem;
-  min-height: fit-content;
-}
+  <div class="section__text">
+    <p>Hello, I am</p>
+    <h1 class="title">Raashid Shaikh</h1>
 
-/* PROFILE */
-#profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-}
+    <p class="section__text__p2">
+      Technical Support | Shopify | SaaS | Troubleshooting
+    </p>
 
-.section__pic-container img {
-  width: 350px;
-  height: auto;
-}
+    <div class="btn-container">
+      <button class="btn btn-color-2"
+        onclick="window.open('https://docs.google.com/document/d/1KsinoVTRJkEfnK2DH7uMb1LJ8fp9S-bj/edit')">
+        View CV
+      </button>
 
-/* EXPERIENCE FIX */
-.about-containers {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+      <button class="btn btn-color-1" onclick="location.href='#contact'">
+        Contact
+      </button>
+    </div>
 
-.details-container {
-  padding: 1.5rem;
-  border: 1px solid rgb(163, 163, 163);
-  border-radius: 2rem;
-  text-align: center;
-  flex: 1;
-  min-width: 280px;
-}
+    <div id="socials-container">
+      <img src="./assets/linkedin.png" class="icon"
+        onclick="location.href='https://linkedin.com'" />
 
-/* IMPORTANT FIX FOR ICON ALIGNMENT */
-article {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
-  width: 100%;
-}
+      <img src="./assets/github.png" class="icon"
+        onclick="location.href='https://github.com'" />
+    </div>
+  </div>
+</section>
 
-article .icon {
-  flex-shrink: 0;
-  margin-top: 4px;
-}
+<!-- ABOUT -->
+<section id="about">
+  <h1 class="title">About Me</h1>
 
-/* ARTICLE LAYOUT FIX */
-.article-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+  <div class="section-container">
 
-/* BUTTONS */
-.btn {
-  padding: 1rem;
-  border-radius: 2rem;
-  width: 8rem;
-  font-weight: 600;
-}
+    <div class="section__pic-container">
+      <img src="./assets/IMG_3963.png" class="about-pic"/>
+    </div>
 
-/* CONTACT */
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
+    <div class="about-details-container">
+
+      <div class="about-containers">
+
+        <div class="details-container">
+          <img src="./assets/experience.png" class="icon"/>
+          <h3>Experience</h3>
+          <p>3+ Years<br/>Tech Support & QA</p>
+        </div>
+
+        <div class="details-container">
+          <img src="./assets/education.png" class="icon"/>
+          <h3>Education</h3>
+          <p>BSc Computer Science<br/>AEC Software Testing</p>
+        </div>
+
+      </div>
+
+      <div class="text-container">
+        <p>
+          Technical Support Specialist with SaaS and e-commerce experience...
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" class="icon arrow"
+    onclick="location.href='#experience'"/>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h1 class="title">Experience</h1>
+
+  <div class="experience-details-container">
+
+    <div class="about-containers">
+
+      <div class="details-container">
+        <h2>Technical Support</h2>
+
+        <div class="article-container">
+
+          <article>
+            <img src="./assets/checkmark.png" class="icon"/>
+            <div>
+              <h3>Shopify Support</h3>
+              <p>Customer Issue Resolution</p>
+            </div>
+          </article>
+
+          <article>
+            <img src="./assets/checkmark.png" class="icon"/>
+            <div>
+              <h3>Ticket Handling</h3>
+              <p>High volume queues</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="details-container">
+        <h2>Technical Skills</h2>
+
+        <div class="article-container">
+
+          <article>
+            <img src="./assets/checkmark.png" class="icon"/>
+            <div>
+              <h3>Selenium</h3>
+              <p>Automation Testing</p>
+            </div>
+          </article>
+
+          <article>
+            <img src="./assets/checkmark.png" class="icon"/>
+            <div>
+              <h3>Java</h3>
+              <p>Basics</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h1 class="title">Contact</h1>
+
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="./assets/email.png" class="icon"/>
+      <p>Email</p>
+    </div>
+
+    <div class="contact-info-container">
+      <img src="./assets/linkedin.png" class="icon"/>
+      <p>LinkedIn</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Copyright © 2026</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
