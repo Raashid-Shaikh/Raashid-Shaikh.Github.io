@@ -14,24 +14,40 @@ html {
   scroll-behavior: smooth;
 }
 
+p {
+  color: rgb(85, 85, 85);
+}
+
 /* NAV */
-nav {
+nav,
+.nav-links {
   display: flex;
+}
+
+nav {
   justify-content: space-around;
   align-items: center;
-  height: 15vh;
+  height: 17vh;
 }
 
 .nav-links {
-  display: flex;
   gap: 2rem;
   list-style: none;
+  font-size: 1.5rem;
+}
+
+/* ICON FIX (IMPORTANT) */
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 /* SECTIONS */
 section {
-  padding: 4vh 10rem;
-  height: auto;
+  padding-top: 4vh;
+  margin: 0 10rem;
+  min-height: fit-content;
 }
 
 /* PROFILE */
@@ -39,74 +55,56 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  flex-wrap: wrap;
-}
-
-.section__pic-container {
-  width: 350px;
-  height: 350px;
 }
 
 .section__pic-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 350px;
+  height: auto;
 }
 
-/* TEXT */
-.section__text {
-  text-align: center;
-}
-
-.title {
-  font-size: 2.5rem;
-}
-
-/* BUTTONS */
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.btn {
-  padding: 1rem;
-  border-radius: 2rem;
-  border: 1px solid #333;
-  cursor: pointer;
-}
-
-/* ABOUT */
+/* EXPERIENCE FIX */
 .about-containers {
   display: flex;
-  justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .details-container {
-  border: 1px solid #aaa;
   padding: 1.5rem;
-  border-radius: 1.5rem;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 2rem;
   text-align: center;
+  flex: 1;
+  min-width: 280px;
 }
 
-/* EXPERIENCE */
-.experience-details-container {
+/* IMPORTANT FIX FOR ICON ALIGNMENT */
+article {
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+  width: 100%;
 }
 
+article .icon {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* ARTICLE LAYOUT FIX */
 .article-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-article {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
+/* BUTTONS */
+.btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 8rem;
+  font-weight: 600;
 }
 
 /* CONTACT */
@@ -114,15 +112,4 @@ article {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 2rem;
-}
-
-/* ✅ FIX FOR YOUR MAIN ISSUE (IMPORTANT) */
-.icon {
-  width: 1.5rem;     /* FIXES BIG ICON ISSUE */
-  height: 1.5rem;    /* FIXES STRETCH ISSUE */
-  object-fit: contain;
-  flex-shrink: 0;    /* prevents flex distortion */
 }
