@@ -14,16 +14,12 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
-  color: rgb(85, 85, 85);
-}
-
 /* NAV */
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 15vh;
 }
 
 .nav-links {
@@ -36,7 +32,6 @@ nav {
 section {
   padding: 4vh 10rem;
   height: auto;
-  min-height: fit-content;
 }
 
 /* PROFILE */
@@ -45,13 +40,11 @@ section {
   justify-content: center;
   gap: 5rem;
   flex-wrap: wrap;
-  height: auto;
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
-  display: flex;
+  width: 350px;
+  height: 350px;
 }
 
 .section__pic-container img {
@@ -80,7 +73,6 @@ section {
   padding: 1rem;
   border-radius: 2rem;
   border: 1px solid #333;
-  font-weight: 600;
   cursor: pointer;
 }
 
@@ -95,17 +87,7 @@ section {
 .details-container {
   border: 1px solid #aaa;
   padding: 1.5rem;
-  border-radius: 2rem;
-  min-width: 250px;
-  text-align: center;
-}
-
-/* TEXT FIX */
-.text-container {
-  margin-top: 1.5rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 1.5rem;
   text-align: center;
 }
 
@@ -123,8 +105,8 @@ section {
 
 article {
   display: flex;
-  gap: 0.8rem;
   align-items: flex-start;
+  gap: 0.8rem;
 }
 
 /* CONTACT */
@@ -135,11 +117,12 @@ article {
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 2rem;
-  flex-wrap: wrap;
 }
 
-/* ICON */
+/* ✅ FIX FOR YOUR MAIN ISSUE (IMPORTANT) */
 .icon {
-  height: 2rem;
-  cursor: pointer;
+  width: 1.5rem;     /* FIXES BIG ICON ISSUE */
+  height: 1.5rem;    /* FIXES STRETCH ISSUE */
+  object-fit: contain;
+  flex-shrink: 0;    /* prevents flex distortion */
 }
