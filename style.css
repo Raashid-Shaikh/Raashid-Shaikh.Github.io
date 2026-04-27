@@ -6,6 +6,24 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icon {
+  height: 2rem !important;
+  width: auto !important;
+}
+
+article .icon {
+  height: 1.2rem !important;
+}
+
+#socials-container .icon {
+  height: 2rem !important;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
