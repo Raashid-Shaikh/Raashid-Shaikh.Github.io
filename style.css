@@ -408,3 +408,12 @@ footer p {
   background-color: #000000;   /* black */
   color: white;
 }
+
+.cert-grid .details-container {
+  padding: 1.5rem 2rem; /* more horizontal breathing space */
+  box-sizing: border-box;
+}
+
+.cert-grid .details-container p {
+  margin-top: 0.5rem;
+}
