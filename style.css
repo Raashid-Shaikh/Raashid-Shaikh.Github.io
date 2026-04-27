@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,66 +7,124 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  padding: 0 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* NAV */
 nav {
   display: flex;
-  justify-content: space-between;
-  padding: 2rem 0;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   list-style: none;
 }
 
-/* PROFILE */
+/* IMPORTANT FIX (prevents single-line layout) */
+section {
+  padding: 4vh 8rem;
+  min-height: fit-content;
+}
+
+/* PROFILE (FIX IMAGE ISSUE) */
 #profile {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 3rem 0;
+  gap: 4rem;
+  flex-wrap: wrap;   /* IMPORTANT */
 }
 
-.profile-container img {
-  width: 300px;
-  border-radius: 20px;
-}
-
-/* SECTIONS */
-section {
-  padding: 3rem 0;
-}
-
-/* CARDS (IMPORTANT FIX) */
-.card {
-  border: 1px solid #ccc;
-  padding: 1.5rem;
-  border-radius: 15px;
-  margin-top: 1rem;
-}
-
-.card-row {
+.section__pic-container {
+  width: 320px;
+  height: 320px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.section__text {
+  text-align: center;
+  max-width: 600px;
+}
+
+/* BUTTONS */
+.btn-container {
+  display: flex;
+  justify-content: center;
   gap: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #333;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ABOUT */
+.about-containers {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
-/* EXPERIENCE LIST FIX */
-.list {
-  margin-top: 1rem;
-  padding-left: 1.2rem;
+.details-container {
+  border: 1px solid #aaa;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  min-width: 250px;
+  text-align: center;
 }
 
-.list li {
-  margin-bottom: 0.5rem;
+/* EXPERIENCE (FIX ALIGNMENT) */
+.experience-details-container {
+  display: flex;
+  justify-content: center;
 }
 
-/* CERTIFICATIONS GRID FIX */
-#certifications .card {
-  min-width: 220px;
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+article {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+/* CERTIFICATIONS (FIX GRID LOOK) */
+#certifications .about-containers {
+  justify-content: center;
+}
+
+/* CONTACT */
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  flex-wrap: wrap;
 }
