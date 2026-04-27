@@ -269,10 +269,12 @@ height: auto;
 }
 
 .about-containers {
+  display: flex;
+  flex-direction: row;
   gap: 2rem;
-  margin-bottom: 5rem;
-  margin-top: 1rem;
-  margin-left: 6rem;
+  margin: 2rem auto;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .about-details-container {
@@ -344,11 +346,9 @@ height: auto;
 
 .article-container {
   display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
 }
 
 article a {
