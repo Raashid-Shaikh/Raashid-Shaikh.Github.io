@@ -1,64 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Raashid Shaikh</title>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="mediaqueries.css"/>
-</head>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<body>
+body {
+  font-family: "Poppins", sans-serif;
+}
 
-<!-- DESKTOP NAV -->
-<nav id="desktop-nav">
-  <div class="logo">Raashid Shaikh</div>
+html {
+  scroll-behavior: smooth;
+}
 
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+p {
+  color: rgb(85, 85, 85);
+}
 
-<!-- HAMBURGER NAV -->
-<nav id="hamburger-nav">
-  <div class="logo">Raashid Shaikh</div>
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
 
-  <div class="hamburger-menu">
-    <div class="hamburger-icon" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
 
-    <div class="menu-links">
-      <li><a href="#about" onclick="toggleMenu()">About</a></li>
-      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-    </div>
-  </div>
-</nav>
+/* ICON FIX */
+.icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
 
-<!-- PROFILE -->
-<section id="profile">
-  <div class="section__pic-container">
-    <img src="./assets/IMG_4671.png" />
-  </div>
+/* SECTIONS */
+section {
+  padding: 4vh 10rem;
+}
 
-  <div class="section__text">
-    <p>Hello, I am</p>
-    <h1 class="title">Raashid Shaikh</h1>
+/* PROFILE */
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+}
 
-    <p class="section__text__p2">
-      Technical Support | Shopify | SaaS | Troubleshooting
-    </p>
+/* ABOUT */
+.section-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
 
-    <div class="btn-container">
-      <button class="btn btn-color-2"
-        onclick="window.open('https://docs.google.com/document/d/1KsinoVTRJkEfnK2DH7uMb1LJ8fp9S-bj/edit')">
-        View CV
-      </button>
+.about-containers {
+  display: flex;
+  gap: 2rem;
+}
 
+/* EXPERIENCE */
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+article {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+/* CONTACT */
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
       <button class="btn btn-color-1" onclick="location.href='#contact'">
         Contact
       </button>
